@@ -1,0 +1,64 @@
+title: Articles
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          localizable: true
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: assets
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          type: assets
+          localizable: false
+          listable: hidden
+          display: Assets
+      -
+        handle: entries
+        field:
+          mode: default
+          collections:
+            - articles
+          type: entries
+          localizable: false
+          listable: hidden
+          display: Entries
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true

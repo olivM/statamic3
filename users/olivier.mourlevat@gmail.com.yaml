@@ -1,0 +1,11 @@
+name: 'Olivier Mourlevat'
+super: true
+id: 4b2855af-c058-4227-8a93-6da6695e3474
+password_hash: $2y$10$0HIk.0k5ycxCT8d45cgLEeCUS9NotED3lZf8m0Bl7W/vySkr90J5a
+preferences:
+  collections:
+    articles:
+      columns:
+        - title
+        - slug
+        - date
